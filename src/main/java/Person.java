@@ -1,18 +1,16 @@
-import java.util.HashMap;
-import java.util.Date;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+import java.util.HashMap;
 
-public class Person { 
-
-    private String personID;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String birthdate;
-    private HashMap<Date, Integer> demeritPoints; // A variable that holds the demerit points with the offense day
-    private boolean isSuspended;
+public class Person {     private final String personID;
+    private final String firstName;
+    private final String lastName;
+    private final String address;
+    private final String birthdate;
+    private final HashMap<Date, Integer> demeritPoints; // A variable that holds the demerit points with the offense day
+    private final boolean isSuspended;
     private static final String DATA_FILE_NAME = "persons.txt";
     
  // Constructor
